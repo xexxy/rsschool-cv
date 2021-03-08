@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i&display=swap&subset=cyrillic');
+
+:root {
+	--margin-top: calc((100vw / 6 - 82px) / 2);
+	--margin-center: calc(75vh - var(--margin-top));
+	--margin-bottom: calc((100vw / 6 - 203px) /2);
+	;
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: var(--margin-top) var(--margin-center) 25vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	width: calc(var(--margin-top) * 2 + 82px);
+	height: 100vh;
+	background-color: black;
+	background-image: url("/images/avatar.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: contain;
+
+}
+
+header {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	margin: var(--margin-top);
+	margin-top: calc(var(--margin-top) + 82px);
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	text-align: right;
+	text-transform: uppercase;
+	color: white;
+}
+
+.rotated {
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+}
+
+h1 {
+	margin: 0;
+	font-size: 38px;
+	letter-spacing: .15em;
+}
+
+h1+p {
+	margin: 0 .5em 0 0;
+	font-size: 24px;
+	letter-spacing: .1em;
+}
+
+p {
+	font-weight: 300;
+	letter-spacing: .05em;
+}
+
+main {
+	grid-column: 2 / -2;
+	grid-row: 2 / -1;
+}
+
+main section:not(:last-of-type) {
+	margin-bottom: 4em;
+}
+
+h2 {
+	margin: 0 0 1em 0;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+main h3 {
+	font-weight: 500;
+}
+
+main a {
+	text-decoration: none;
+	color: black;
+}
+
+.experience ul,
+.skills ul {
+	margin-left: 1em;
+	list-style: square;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	margin: var(--margin-bottom);
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+footer li:first-of-type {
+	margin-top: 2em;
+}
+
+footer li {
+	margin: 1em 0;
+	letter-spacing: .05em;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
