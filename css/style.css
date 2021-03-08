@@ -20,13 +20,10 @@ header {
 	position: relative;
 }
 
-
-
 header img {
 	margin-bottom: 100px;
 	vertical-align: bottom;
 }
-
 
 h1 {
 	margin: 0;
@@ -72,6 +69,10 @@ a {
 	color: black;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 .line {
 	margin: 1em 0;
 	border-bottom: 1px solid #323232;
@@ -109,8 +110,7 @@ a {
 		position: absolute;
 		top: 300px;
 		margin-left: 550px;
-		color: white
-		
+		color: white;
 	}
 
 	footer h2 {
@@ -127,7 +127,6 @@ a {
 		display: grid;
 		grid-template-columns: 10px 1fr 10px;
 	}
-
 
 	header img {
 		margin-top: 10px;
