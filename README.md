@@ -1,10 +1,10 @@
 1. Task: https://rolling-scopes-school.github.io/stage0/#/stage0/tasks/html-css
 2. Screenshot:
-
+![](https://raw.githubusercontent.com/xexxy/rsschool-cv/master/images/html-css.png)
 3. Deploy: https://xexxy.github.io/rsschool-cv/
 4. Done 08.03.2021 / deadline 08.03.2021
 5. Score: 100 / 100
-![](https://raw.githubusercontent.com/xexxy/rsschool-cv/master/images/html-css.png)
+
 Вёрстка:
  Верстка валидная (10/10)
  Верстка семантическая (10/10)
